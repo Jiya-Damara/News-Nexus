@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FAF9F6;
+        }
+
+        .navitems {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+
+        }
+
+        .div-header {
+            background: linear-gradient(rgb(5, 41, 74), rgb(5, 41, 99));
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        #logo {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        h3 {
+            color: white;
+            font-size: 50px;
+            font-family: "Bodoni Moda SC", serif;
+            font-optical-sizing: auto;
+            font-weight: 50;
+            font-style: normal;
+
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* background-color: #8f4949; */
+
+        }
+
+        .card {
+            width: 20%;
+            /* background-color: #626329; */
+            margin: 20px;
+            border-radius: 15px;
+            background-color: #FAF9F6;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.263);
+            border: 1px solid black;
+
+        }
+
+        .card-header {
+            height: 200px;
+            width: 100%;
+        }
+
+        .card-header img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+        }
+
+        #news-title {
+            font-size: 30px;
+            color: rgb(38, 54, 174);
+        }
+
+        .news-source {
+            font-size: 15px;
+        }
+
+        .footer {
+            margin-top: 70px;
+            height: 30vh;
+            background-color: rgb(4, 33, 60);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .flogo {
+            border-radius: 50%;
+            height: 70%;
+            aspect-ratio: square;
+        }
+
+        .contactus,
+        address {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .headf {
+            font-weight: 600;
+        }
+
+        .search {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search input {
+            padding: 5px;
+            border-radius: 15px;
+
+        }
+
+        .search span {
+            color: #FAF9F6;
+
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <div class="div-header">
+            <img src="logo.png" id="logo" alt="logo">
+            <div class="search">
+                <input type="search" placeholder="search">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+
+            <ul class="navitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="gallery.html">View Gallery</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+
+    <main>
+        <div class="cards-container" id="cardscontainer">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.indianexpress.com/2024/07/arvind-kejriwal-8.jpg?w=475" alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Supreme Court grants Kejriwal interim bail but he doesn't walk out of jail yet
+                    </h3>
+                    <h6 class="news-source">indianexpress</h6>
+                    <p class="news-desc">Delhi News Live Updates (July 12): The Supreme Court Friday granted interim
+                        bail to Delhi Chief Minister Arvind Kejriwal in a money laundering case linked to the alleged
+                        excise policy scam. The court said that it is Kejriwal’s call whether he wants to continue as
+                        Chief Minister. The court was hearing Kejriwal’s challenge to his arrest by the Enforcement
+                        Directorate (ED).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://c.ndtvimg.com/2024-07/l11kcgn_modi-putin_625x300_09_July_24.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">"Bet On Russia As Long-Term, Reliable Partner Not A Good One": US Official To
+                        India</h3>
+                    <h6 class="news-source">NDTV</h6>
+                    <p class="news-desc">'Bet On Russia As Long-Term, Reliable Partner Not A Good One': US Official To
+                        India
+                        Mr Sullivan also acknowledged that countries like India have a historic relationship with
+                        Russia.
+
+
+                        Washington: Amid concerns over India's ties with Russia, a top US official on Thursday cautioned
+                        New Delhi that a "bet on Russia as a long-term, reliable partner is not a good bet" and Moscow
+                        would side with Beijing over New Delhi in case of a conflict between the two Asian giants.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/nepal_floods_landslide_bus_1720749131873_1720749132237.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">63 missing after landslide sweeps two buses into Trishuli River in Nepal,
+                        Kathmandu-Bharatpur flights cancelled</h3>
+                    <h6 class="news-source">Hindustan Times</h6>
+                    <p class="news-desc">A landslide on the Madan-Ashrit Highway in Nepal early this morning swept two
+                        buses carrying 63 people into the Trishuli River. The incident, involving the Kathmandu-bound
+                        Angel bus and Ganpati Deluxe, occurred around 3:30 am amid heavy rainfall in the region.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://c.ndtvimg.com/2024-07/9ko7rkcg_devendra-fadnavis-eknath-shinde-ajit-pawar-fadanvis-shinde-ajit_625x300_11_July_24.jpeg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">11 MLC Seats, 12 In Fray: Maharashtra Parties Move MLAs To 5-Star Hotels</h3>
+                    <h6 class="news-source">NDTV</h6>
+                    <p class="news-desc">Mumbai: Resort politics has made a comeback in Maharashtra, and so has the
+                        possibility of cross-voting and horsetrading, as the state gears up to hold elections for 11
+                        Legislative Council seats on Friday. Riding high after its unexpectedly good performance in the
+                        Lok Sabha polls, in which it won 30 of the state's 48 seats, the opposition Maha Vikas Aghadi
+                        has fielded three candidates, one more than it has the numbers to elect, necessitating the
+                        election.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://static.toiimg.com/thumb/msid-111670438,imgsize-988217,width-400,height-225,resizemode-72/111670438.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Telangana: Man goes to kill wife, ends up murdering her parents</h3>
+                    <h6 class="news-source">CityNews</h6>
+                    <p class="news-desc">Nagaraju and Deepika had eloped and married in Nov last year after her parents
+                        objected to their inter-community union. Nagaraju is a SC and Deepika a tribal. The couple's
+                        romance had bloomed after
+                        Deepika first met him as a passenger in his auto.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/ANI-20240710078-0_1720752990103_1720753004056.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Morning briefing: US envoy's ‘message’ on Modi-Putin meet; India population to
+                        double China’s in 2085, and more
+                    </h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">Strategic autonomy cannot apply in times of conflict and India and the US must
+                        uphold principles when other countries go against the rules-based order or violate sovereign
+                        borders, US ambassador Eric Garcetti said on Thursday in a swipe against Prime Minister Narendra
+                        Modi’s visit to Russia.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.indianexpress.com/2024/07/uddhav-thackeray-eknath-shinde.jpg?w=640"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Maharashtra MLC Polls Live Updates: Oppn says jailed BJP MLA shouldn’t be
+                        allowed to vote; polling for 11 MLC seats underway</h3>
+                    <h6 class="news-source">indianexpress</h6>
+                    <p class="news-desc">Maharashtra MLC Polls Live Updates: Amid biennial Maharashtra Legislative
+                        Council elections, the Opposition parties – Congress and Shiv Sena (UBT) have raised objection
+                        on jailed BJP MLA Ganpat Gaikwad being permitted to cast vote. The Congress has written to
+                        Assembly speaker urging him not to allow Gaikwad to vote while Shiv Sena (UBT) MP Sanjay Raut
+                        termed it a misuse of power saying that NCP MLAs Nawab Malik and Anil Deshmukh were not
+                        permitted to vote when they were in jail in 2022.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/06/550x309/captain_army_1720260349857_1720260368564.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Captain Anshuman Singh's widow Smriti Singh recalls their last conversation: 'On
+                        July 18… Next day, he died'</h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">"It was love at first sight," recalled Smriti Singh - the wife of late Captain
+                        Anshuman Singh who was awarded Kirti Chakra posthumously for the ultimate sacrifice in saving
+                        the life of his fellow army men from a fire at Siachen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/11/550x309/5e8b7eca-a6d0-4803-8e90-78c9abe15d1f_1720687838476_1720687842400.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Anant Ambani gives competition to mom Nita Ambani with his massive
+                        ‘physics-defying' emerald brooch</h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">Anant Ambani and Radhika Merchant are set to tie the knot on July 12, and the
+                        excitement is through the roof. Their pre-wedding festivities have been the talk of the town,
+                        and if those celebrations are anything to go by, we can only imagine how extravagant the wedding
+                        will be.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://www.india.com/wp-content/uploads/2023/06/Kusha-Kapila-Zorawar-Ahluwalia-1.png"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title"> Kusha Kapila breaks silence after being roasted on her divorce with Zorawar,
+                        reveals she restricted posts on Samay Raina</h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">Kusha Kapila is opening up about Samay Raina roasting her divorce with Zorawar
+                        Ahluwalia. Kusha recently joined a host of other comedians where many of them roasted each other
+                        on the new series, Pretty Good Roast Show S1. Samay Raina took many digs at Kusha's marriage and
+                        her recent divorce with Zorawar. In a recent AMA session on Instagram, Kusha finally opened up
+                        about the matter.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/_1d44dc02-1d7e-11eb-99e1-1f704b24b706_1720744491640.png"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Biden reacts to Kamala Harris gaffe and Trump's mockery, 'I know the difference
+                        between...'</h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">US President Joe Biden on Friday reacted to Vice President Kamala Harris' gaffe
+                        and former President Donald Trump's mockery, saying, "I know the difference between Iraq and
+                        Iran." Harris had mistakenly referred to the two countries as "interchangeable" during a speech
+                        in Poland on Thursday.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.moneycontrol.com/static-mcnews/2024/06/20240620103319_sensex_nifty_sensex_market.jpg?impolicy=website&width=770&height=431"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Short Call: Waiting for the Budget, perils of rising agri-credit, base metals
+                        lose shine, Tata Elxsi, Lupin, Ambuja Cement</h3>
+                    <h6 class="news-source">hindustantimes</h6>
+                    <p class="news-desc">Sticking to fiscal prudence while also appeasing the lower-and middle-class,
+                        pushing capex while also pleasing farmers, boosting welfare spending without making it too
+                        obvious, the street is eagerly awaiting what Finance Minister Nirmala Sitharaman has to offer in
+                        Budget 2024-25.
+
+                        Investors are a bit edgy this time because unlike in the past, the government may also need to
+                        consider the pulls and pressures of coalition partners, who have so far been quite well-behaved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer">
+        <img src="logo.png" class="flogo" alt="logo">
+
+        <p>&copy; 2024 News Nexus. All rights reserved.</p>
+        <div class="contactus" id="contactus">
+            <h2 class="headf">Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at the address below:</p>
+            <address>
+                <strong>News Nexus</strong><br>
+                Chitkara University, Rajpura<br>
+                Punjab, India<br>
+                <a href="/">newsnexus@gmail.com</a><br>
+                Phone: (123) 456-7890
+            </address>
+        </div>
+    </div>
+</footer>
+</html>

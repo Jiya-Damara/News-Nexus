@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+  
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FAF9F6;
+        }
+
+        .navitems {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+
+        }
+
+        .div-header {
+            background: linear-gradient(rgb(5, 41, 74), rgb(5, 41, 99));
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        #logo {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .h1 {
+            color: white;
+            font-size: 80px;
+            font-family: "Anton", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        .search {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search input {
+            padding: 5px;
+            border-radius: 15px;
+
+        }
+
+        .search span {
+            color: #FAF9F6;
+
+        }
+
+        .h3 {
+            color: white;
+            font-size: 50px;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 70px;
+            height: 30vh;
+            background-color: rgb(4, 33, 60);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .flogo {
+            border-radius: 50%;
+            height: 70%;
+            aspect-ratio: square;
+        }
+
+        .contactus,
+        address {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .headf {
+            font-weight: 600;
+        }
+
+        .div-banner {
+            background: url("background_image.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70vh;
+            margin: 50px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.448);
+            color: #000000;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* background-color: #8f4949; */
+
+        }
+
+        .card {
+            width: 20%;
+            /* background-color: #626329; */
+            margin: 20px;
+            border-radius: 15px;
+            background-color: #FAF9F6;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.263);
+            border: 1px solid black;
+
+        }
+
+        .card-header {
+            height: 200px;
+            width: 100%;
+        }
+
+        .card-header img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+        }
+
+        #news-title {
+            font-size: 30px;
+            color: rgb(38, 54, 174);
+        }
+
+        .news-source {
+            font-size: 15px;
+        }
+
+        .headingt {
+            font-size: 40px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: "Anton", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <div class="div-header">
+            <img src="logo.png" id="logo" alt="logo">
+            <div class="search">
+                <input type="search" placeholder="search">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <ul class="navitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="gallery.html">View Gallery</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div>
+        <div class="div-banner">
+            <h1 class="h1">News Nexus</h1>
+            <h3 class="h3"> Welcome to our Newletter Page </h3>
+            <h2 style="color: #ffffff;">Stay informed, stay connected.</h2>
+        </div>
+        <div class="headingt">Top News</div>
+
+        <div class="cards-container" id="cardscontainer">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.indianexpress.com/2024/07/arvind-kejriwal-8.jpg?w=475" alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Supreme Court grants Kejriwal interim bail but he doesn't walk out of jail yet
+                    </h3>
+                    <h6 class="news-source">indianexpress</h6>
+                    <p class="news-desc">Delhi News Live Updates (July 12): The Supreme Court Friday granted interim
+                        bail to Delhi Chief Minister Arvind Kejriwal in a money laundering case linked to the alleged
+                        excise policy scam. The court said that it is Kejriwal’s call whether he wants to continue as
+                        Chief Minister. The court was hearing Kejriwal’s challenge to his arrest by the Enforcement
+                        Directorate (ED).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://c.ndtvimg.com/2024-07/l11kcgn_modi-putin_625x300_09_July_24.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">"Bet On Russia As Long-Term, Reliable Partner Not A Good One": US Official To
+                        India</h3>
+                    <h6 class="news-source">NDTV</h6>
+                    <p class="news-desc">'Bet On Russia As Long-Term, Reliable Partner Not A Good One': US Official To
+                        India
+                        Mr Sullivan also acknowledged that countries like India have a historic relationship with
+                        Russia.
+
+
+                        Washington: Amid concerns over India's ties with Russia, a top US official on Thursday cautioned
+                        New Delhi that a "bet on Russia as a long-term, reliable partner is not a good bet" and Moscow
+                        would side with Beijing over New Delhi in case of a conflict between the two Asian giants.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/nepal_floods_landslide_bus_1720749131873_1720749132237.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">63 missing after landslide sweeps two buses into Trishuli River in Nepal,
+                        Kathmandu-Bharatpur flights cancelled</h3>
+                    <h6 class="news-source">Hindustan Times</h6>
+                    <p class="news-desc">A landslide on the Madan-Ashrit Highway in Nepal early this morning swept two
+                        buses carrying 63 people into the Trishuli River. The incident, involving the Kathmandu-bound
+                        Angel bus and Ganpati Deluxe, occurred around 3:30 am amid heavy rainfall in the region.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/nepal_floods_landslide_bus_1720749131873_1720749132237.jpg"
+                        alt="News Image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">63 missing after landslide sweeps two buses into Trishuli River in Nepal,
+                        Kathmandu-Bharatpur flights cancelled</h3>
+                    <h6 class="news-source">Hindustan Times</h6>
+                    <p class="news-desc">A landslide on the Madan-Ashrit Highway in Nepal early this morning swept two
+                        buses carrying 63 people into the Trishuli River. The incident, involving the Kathmandu-bound
+                        Angel bus and Ganpati Deluxe, occurred around 3:30 am amid heavy rainfall in the region.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="footer">
+        <img src="logo.png" class="flogo" alt="logo">
+
+        <p>&copy; 2024 News Nexus. All rights reserved.</p>
+        <div class="contactus" id="contactus">
+            <h2 class="headf">Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at the address below:</p>
+            <address>
+                <strong>News Nexus</strong><br>
+                Chitkara University, Rajpura<br>
+                Punjab, India<br>
+                <a href="/">newsnexus@gmail.com</a><br>
+                Phone: (123) 456-7890
+            </address>
+        </div>
+    </div>
+</footer>
+
+</html>
